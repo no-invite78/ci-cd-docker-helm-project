@@ -132,14 +132,23 @@ container_memory_usage_bytes{pod=~"flask-app.*"}
 
 ## Screenshots
 
-1. AWS Console
-S3 bucket for Terraform remote state.
-EC2 instance details.
-2. Kubernetes Deployment
-kubectl get pods output.
-kubectl get svc output showing LoadBalancer.
-3. Grafana Dashboard
-CPU usage metrics for the Flask app.
+### 1. AWS Console
+- **S3 Bucket for Terraform State:**
+  ![S3 Bucket](screenshots/Screenshot%202024-12-18%20at%2002.50.41.png)
+
+- **EC2 Instance Details:**
+  ![EC2 Instance](screenshots/Screenshot%202024-12-18%20at%2002.51.38.png)
+  
+
+### 2. Kubernetes Deployment
+- **`kubectl get pods` and `kubectl get svc` Output:**
+  ![Pods and Services Output](screenshots/Screenshot%202024-12-18%20at%2010.01.04.png)
+
+
+### 3. Grafana Dashboard
+- **CPU Usage:**
+  ![Grafana CPU](screenshots/Screenshot%202024-12-18%20at%2010.24.35.png)
+
 
 ## Folder Structure
 
