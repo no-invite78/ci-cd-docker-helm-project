@@ -1,0 +1,21 @@
+stages:
+  - build
+  - test
+  - deploy
+
+# build and push docker image hub
+docker-build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - echo "Logging into Docker Hub..."
+    - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+    - echo "Building Docker image..."
+    - docker build -t $DOCKER_USERNAME/sample-app:latest .
+    - echo "Pushing image to Docker Hub..."
+    - docker push $DOCKER_USERNAME/sample-app:latest
+  only:
+    - main
+
