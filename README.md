@@ -142,16 +142,17 @@ container_memory_usage_bytes{pod=~"flask-app.*"}
 
 ### 2. Kubernetes Deployment
 - **`kubectl get pods` and `kubectl get svc` Output:**
+
   ![Pods and Services Output](screenshots/Screenshot%202024-12-18%20at%2010.01.04.png)
 
 
 ### 3. Grafana Dashboard
 - **CPU Usage:**
+  
   ![Grafana CPU](screenshots/Screenshot%202024-12-18%20at%2010.24.35.png)
 
 
 ## Folder Structure
-
 ```bash
 ci-cd-docker-helm-main/
 │-- flask-app/                    # Flask application code
